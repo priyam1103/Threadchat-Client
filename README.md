@@ -1,5 +1,5 @@
 # Threadchat
-[Live site](https://thread-chat.vercel.app/)
+[Live site](https://threadchat.vercel.app/)
 A multithread debate or chat application in real time.
 
 [Demo video](https://vimeo.com/544331666)
