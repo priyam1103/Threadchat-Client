@@ -103,6 +103,10 @@ Status can be seen in the thread audience list.
 
 ![image](https://user-images.githubusercontent.com/33376200/116826454-b047f900-abb1-11eb-8c2e-4a9c617459aa.png)
 
+* Close thread and only be viewed
+
+![image](https://user-images.githubusercontent.com/33376200/116828032-d8d3f100-abb9-11eb-8938-5ed938397a1c.png)
+
 * Every activity is view through a popup
 
 * Users can viewed the highlights of the thread.
