@@ -1,6 +1,6 @@
 import React from 'react'
 import {Label} from "../../semantichelper"
-export default function SaveStatus({admin,thread,savethread}) {
+function SaveStatus({admin,thread,savethread}) {
     return (
         <>
         {admin ? (
@@ -42,3 +42,5 @@ export default function SaveStatus({admin,thread,savethread}) {
         )}</>
     )
 }
+
+export default React.memo(SaveStatus)

@@ -1,6 +1,6 @@
 import React from "react";
 import { Comment, Form, Header, Icon, Button } from "../../semantichelper";
-export default function AddComment({
+function AddComment({
   thread,
   admin,
   achat,
@@ -113,3 +113,4 @@ export default function AddComment({
     </div>
   );
 }
+export default React.memo(AddComment);

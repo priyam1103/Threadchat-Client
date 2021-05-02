@@ -1,6 +1,6 @@
 import React from "react";
 import { List, Image, Header, Icon, Label } from "../../semantichelper";
-export default function ThreadAdminPanelRight({
+function ThreadAdminPanelRight({
   thread,
   admin,
   setAddMemberModal,
@@ -67,3 +67,4 @@ export default function ThreadAdminPanelRight({
     </div>
   );
 }
+export default React.memo(ThreadAdminPanelRight)

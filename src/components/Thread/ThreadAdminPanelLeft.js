@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, List, Header, Icon } from "../../semantichelper";
-export default function ThreadAdminPanelLeft({
+function ThreadAdminPanelLeft({
   thread,
   admin,
   allowToText,
@@ -68,3 +68,4 @@ export default function ThreadAdminPanelLeft({
     </>
   );
 }
+export default React.memo(ThreadAdminPanelLeft)

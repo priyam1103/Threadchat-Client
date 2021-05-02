@@ -12,7 +12,7 @@ import {
 } from "../../semantichelper";
 import DateTimePicker from "react-datetime-picker";
 
-export default function Settings({
+function Settings({
   showmodal,
   formdata,
   setFormData,
@@ -179,3 +179,5 @@ export default function Settings({
     </Modal>
   );
 }
+
+export default React.memo(Settings)

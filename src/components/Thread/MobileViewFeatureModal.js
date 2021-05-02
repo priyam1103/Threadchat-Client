@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, Button } from "../../semantichelper";
 
-export default function MobileViewFeatureModal({
+function MobileViewFeatureModal({
   view,
   modalaction,
   header,
@@ -23,3 +23,4 @@ export default function MobileViewFeatureModal({
     </div>
   );
 }
+export default React.memo(MobileViewFeatureModal)

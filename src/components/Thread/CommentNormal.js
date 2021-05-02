@@ -1,6 +1,6 @@
 import React from "react";
 import { Comment } from "../../semantichelper";
-export default function CommentNormal({
+ function CommentNormal({
   item,
   admin,
   addReply,
@@ -50,3 +50,5 @@ export default function CommentNormal({
     </Comment.Group>
   );
 }
+
+export default React.memo(CommentNormal);

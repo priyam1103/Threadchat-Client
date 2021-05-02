@@ -1,6 +1,6 @@
 import React from 'react'
 import {Modal,Comment,Button} from "../../semantichelper"
-export default function Highlights({highlightsmodal,getDateTime,setHighlightsModal,thread}) {
+function Highlights({highlightsmodal,getDateTime,setHighlightsModal,thread}) {
     return (
         <Modal
         centered={false}
@@ -33,3 +33,4 @@ export default function Highlights({highlightsmodal,getDateTime,setHighlightsMod
       </Modal>
     )
 }
+export default React.memo(Highlights)

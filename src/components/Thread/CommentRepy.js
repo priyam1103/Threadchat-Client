@@ -1,6 +1,6 @@
 import React from "react";
 import { Comment } from "../../semantichelper";
-export default function CommentReply({ item,getDateTime, addReply, thread, index }) {
+function CommentReply({ item,getDateTime, addReply, thread, index }) {
   return (
     <div key={index}>
       <Comment>
@@ -36,3 +36,4 @@ export default function CommentReply({ item,getDateTime, addReply, thread, index
     </div>
   );
 }
+export default React.memo(CommentReply)

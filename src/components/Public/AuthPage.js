@@ -81,7 +81,7 @@ export default function AuthPage() {
             circular
           />
         </div>
-        <Header as="h3">Welcom to clubhouse !!</Header>
+        <Header as="h3">Welcome to threadchat !!</Header>
         <Form>
           <Form.Field
             id="form-input-control-error-email"
