@@ -47,35 +47,37 @@ function ThreadDescription({
                   
                 </Item.Extra>
               </>
-                      )}
-                      <div className="mob-menu">
-                    <Menu compact>
-                      <Menu.Item
-                        as="a"
-                        onClick={() => {
-                          setShowParticipant(true);
-                        }}
-                      >
-                        <Icon name="users" />
-                        <Label color="red" floating>
-                          {thread.people_in_thread?.length}
-                        </Label>
-                      </Menu.Item>
-                      {admin && (
-                        <Menu.Item
-                          as="a"
-                          onClick={() => {
-                            setRaisedHand(true);
-                          }}
-                        >
-                          <Icon name="hand paper" />
-                          <Label color="teal" floating>
-                            {thread.raised_hand?.length}
-                          </Label>
-                        </Menu.Item>
-                      )}
-                    </Menu>
-                  </div>
+            )}
+            {!thread.closed &&
+              <div className="mob-menu">
+                <Menu compact>
+                  <Menu.Item
+                    as="a"
+                    onClick={() => {
+                      setShowParticipant(true);
+                    }}
+                  >
+                    <Icon name="users" />
+                    <Label color="red" floating>
+                      {thread.people_in_thread?.length}
+                    </Label>
+                  </Menu.Item>
+                  {admin && (
+                    <Menu.Item
+                      as="a"
+                      onClick={() => {
+                        setRaisedHand(true);
+                      }}
+                    >
+                      <Icon name="hand paper" />
+                      <Label color="teal" floating>
+                        {thread.raised_hand?.length}
+                      </Label>
+                    </Menu.Item>
+                  )}
+                </Menu>
+              </div>
+            }
           </div>
           <p>
             {" "}

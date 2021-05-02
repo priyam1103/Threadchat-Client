@@ -72,6 +72,7 @@ function AddComment({
                           ofuser: replycomment.uname,
                           ofuserimage: replycomment.image,
                           ofusercomment: replycomment.comment,
+                          timing: replycomment.time,
                           body: commentbody,
                         });
                       }
