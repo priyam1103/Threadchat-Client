@@ -15,7 +15,7 @@ export default function ThreadDescription({
       <Item>
         <Item.Content>
           <Item.Header as="a">{thread.topic} <Icon
-          onClick={()=>{copy(`https://threadoverflow.herokuapp.com/thread/${thread._id}`)}}
+          onClick={()=>{copy(`https://threadchat.vercel.app/thread/${thread._id}`)}}
                       name="copy outline" /></Item.Header>
           {thread.islive && (
             <Item.Meta>
