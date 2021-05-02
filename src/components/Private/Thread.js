@@ -145,7 +145,7 @@ export default function Thread() {
     });
   }
   function sendChat(obj) {
-    setLoading(true);
+    
     socket.emit("sendmessage", { ...obj, tid: params.tid }, (data) => {
       if (data.success) {
         setLoading(false);
@@ -306,7 +306,7 @@ export default function Thread() {
           showsettings={showsettings}
           setShowSettings={setShowSettings}
         />
-        {loading && <Loader />}
+        {loading && <Loader page="thread"/>}
         {infoalert && <InfoAlert mdesc={infoalert} />}
         {erroralert && <ErrorAlert mdesc={infoalert} />}
 
@@ -338,7 +338,7 @@ export default function Thread() {
             stopedtyping={stopedtyping}
           />
         )}
-        {loading && <Loader />}
+        {loading && <Loader page="thread"/>}
         {erroralert && <ErrorAlert mdesc={infoalert} />}
 
         {closedalert && <ClosedAlert mdesc={closedalert} />}
